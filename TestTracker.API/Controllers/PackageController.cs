@@ -20,11 +20,11 @@ namespace TestTracker.API.Controllers
             });
         }
 
-        [HttpGet("{id}")]
+/*        [HttpGet("{id}")]
         public IActionResult GetPackageById(int id)
         {
 
-        }
+        }*/
 
         
     }
