@@ -14,10 +14,7 @@ namespace TestTracker.API.Controllers
         [HttpGet]
         public IActionResult GetPackages()
         {
-            return Ok(new List<Package>()
-            {
-
-            });
+            return Ok(TestTrackerDataStore.Current.Packages);
         }
 
 /*        [HttpGet("{id}")]
