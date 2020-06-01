@@ -15,6 +15,7 @@ namespace TestTracker.API.Contexts
 
         public TestTrackerContext(DbContextOptions<TestTrackerContext> options) : base(options)
         {
+            Database.EnsureCreated();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
